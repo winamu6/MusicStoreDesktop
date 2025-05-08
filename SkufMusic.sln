@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkufMusic.Data", "SkufMusic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkufMusic.Core", "SkufMusic.Core\SkufMusic.Core.csproj", "{87EC75E5-4888-48E1-A670-F7308CE529BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkufMusic.Test", "SkufMusic.Test\SkufMusic.Test.csproj", "{F65A0EB7-92F5-44A5-92BF-7245AFA931C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{87EC75E5-4888-48E1-A670-F7308CE529BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87EC75E5-4888-48E1-A670-F7308CE529BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87EC75E5-4888-48E1-A670-F7308CE529BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65A0EB7-92F5-44A5-92BF-7245AFA931C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65A0EB7-92F5-44A5-92BF-7245AFA931C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65A0EB7-92F5-44A5-92BF-7245AFA931C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65A0EB7-92F5-44A5-92BF-7245AFA931C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
