@@ -6,6 +6,16 @@ using System.IO;
 using System.Windows;
 using Microsoft.EntityFrameworkCore;
 using SkufMusic.Data.Data;
+using SkufMusic.Core.Services.AdminServices.AdminServicesInterfaces;
+using SkufMusic.Core.Services.AdminServices;
+using SkufMusic.Core.Services.CartServices.CartServicesInterfaces;
+using SkufMusic.Core.Services.CartServices;
+using SkufMusic.Core.Services.CatalogServices.CatalogServicesInterfaces;
+using SkufMusic.Core.Services.CatalogServices;
+using SkufMusic.Core.Services.OrderServices.OrderServicesInterfaces;
+using SkufMusic.Core.Services.OrderServices;
+using SkufMusic.Core.Services.UserServices.UserServicesInterfaces;
+using SkufMusic.Core.Services.UserServices;
 
 public partial class App : Application
 {
@@ -25,6 +35,12 @@ public partial class App : Application
 
                 services.AddDbContext<MusicStoreDbContext>(options =>
                     options.UseSqlServer(connectionString));
+
+                services.AddScoped<IUserService, UserService>();
+                services.AddScoped<ICatalogService, CatalogService>();
+                services.AddScoped<ICartService, CartService>();
+                services.AddScoped<IOrderService, OrderService>();
+                services.AddScoped<IAdminService, AdminService>();
 
             })
             .Build();
